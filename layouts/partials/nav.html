@@ -1,0 +1,12 @@
+<header class="antron-nav">
+  <div class="antron-nav-inner">
+    <a class="antron-nav-brand" href="/" aria-label="{{ .Site.Title }} home">
+      <img class="antron-nav-wordmark" src="/images/antron-wordmark-white.png" alt="{{ .Site.Title }}" width="230" height="44">
+    </a>
+    <nav class="antron-nav-links" aria-label="Main navigation">
+      {{ range site.Menus.main }}
+      <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

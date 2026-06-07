@@ -13,6 +13,7 @@ ignoreFiles = ['content/posts/.*', 'content/prose.md']
   author = 'Antron Tech'
   description = 'Antron Tech develops reliable technology for defense and security applications in demanding operational environments.'
   moto = 'Reliable systems for demanding operational environments.'
+  og_image = '/images/Antron_Logo_JPEG.jpeg'
   disable_theme_toggle = false
   disable_stay_uptodate = true
 
