@@ -1,0 +1,21 @@
+baseURL = 'https://antron.tech/'
+locale = 'en-us'
+title = 'Antron Tech'
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  description = 'Antron Tech is a defense industry company focused on reliable technology for demanding operational environments.'
+
+[menus]
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 10
+  [[menus.main]]
+    name = 'Capabilities'
+    pageRef = '/capabilities'
+    weight = 20
+  [[menus.main]]
+    name = 'Contact'
+    pageRef = '/contact'
+    weight = 30

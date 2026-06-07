@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Defense Industry Technology</p>
+      <h1>Reliable systems for demanding operational environments.</h1>
+      <div class="lead">{{ .Content }}</div>
+      <div class="actions">
+        <a class="button primary" href="/capabilities/">Capabilities</a>
+        <a class="button secondary" href="/contact/">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="summary-grid" aria-label="Company focus areas">
+    <article>
+      <h2>Engineering</h2>
+      <p>Focused technical development for defense and security applications.</p>
+    </article>
+    <article>
+      <h2>Integration</h2>
+      <p>Hardware, software, and sensor systems built around field realities.</p>
+    </article>
+    <article>
+      <h2>Reliability</h2>
+      <p>Practical design choices for long service life and operational confidence.</p>
+    </article>
+  </section>
+{{ end }}
