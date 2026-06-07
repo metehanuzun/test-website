@@ -1,4 +1,4 @@
-baseURL = 'https://antron.tech/'
+baseURL = 'https://antrontech.com/'
 locale = 'en-us'
 title = 'Antron Tech'
 disableKinds = ['taxonomy', 'term']

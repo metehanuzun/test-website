@@ -1,9 +1,13 @@
 {{ define "main" }}
   <article class="page">
-    <p class="eyebrow">Antron Tech</p>
-    <h1>{{ .Title }}</h1>
-    <div class="page-content">
-      {{ .Content }}
+    <header class="page-hero">
+      <p class="eyebrow">Antron Tech</p>
+      <h1>{{ .Title }}</h1>
+    </header>
+    <div class="page-shell">
+      <div class="page-content">
+        {{ .Content }}
+      </div>
     </div>
   </article>
 {{ end }}
