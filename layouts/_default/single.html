@@ -1,13 +1,16 @@
 {{ define "main" }}
-  <article class="page">
-    <header class="page-hero">
-      <p class="eyebrow">Antron Tech</p>
+<link rel="stylesheet" href="/css/antron.css">
+<article>
+  <header class="antron-page-hero">
+    <div class="antron-wrap">
+      <p class="antron-eyebrow">Antron Tech</p>
       <h1>{{ .Title }}</h1>
-    </header>
-    <div class="page-shell">
-      <div class="page-content">
-        {{ .Content }}
-      </div>
     </div>
-  </article>
+  </header>
+  <div class="antron-page-body antron-wrap">
+    <div class="antron-page-content prose dark:prose-invert">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
 {{ end }}

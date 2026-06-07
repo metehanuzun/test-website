@@ -1,58 +1,66 @@
 {{ define "main" }}
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow">Defense Industry Technology</p>
-        <h1>Reliable systems for demanding operational environments.</h1>
-        <div class="lead">{{ .Content }}</div>
-        <div class="actions">
-          <a class="button primary" href="/capabilities/">View Capabilities</a>
-          <a class="button secondary" href="/contact/">Contact</a>
+<link rel="stylesheet" href="/css/antron.css">
+<main>
+  <section class="antron-hero">
+    <div class="antron-wrap antron-hero-grid">
+      <div class="antron-hero-copy">
+          <p class="antron-eyebrow">Defense Industry Technology</p>
+          <h1>
+            Reliable systems for demanding operational environments.
+          </h1>
+          <div class="antron-lead">
+            {{ .Content }}
+          </div>
+          <div class="antron-actions">
+            <a href="/capabilities/" class="antron-button antron-button-primary">
+              View Capabilities
+            </a>
+            <a href="/contact/" class="antron-button antron-button-secondary">
+              Contact
+            </a>
+          </div>
+        </div>
+        <div class="antron-focus-panel">
+            <div>
+              <span>01</span>
+              <h2>Embedded control</h2>
+              <p>Robust software close to the hardware.</p>
+            </div>
+            <div>
+              <span>02</span>
+              <h2>Sensor integration</h2>
+              <p>Practical system design across devices and data flows.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <h2>Field readiness</h2>
+              <p>Engineering choices shaped by real operating conditions.</p>
+            </div>
         </div>
       </div>
-      <div class="hero-panel" aria-label="Operational focus">
-        <div>
-          <span>01</span>
-          <strong>Embedded control</strong>
-          <p>Robust software close to the hardware.</p>
-        </div>
-        <div>
-          <span>02</span>
-          <strong>Sensor integration</strong>
-          <p>Practical system design across devices and data flows.</p>
-        </div>
-        <div>
-          <span>03</span>
-          <strong>Field readiness</strong>
-          <p>Engineering choices shaped by real operating conditions.</p>
-        </div>
+  </section>
+
+  <section class="antron-section antron-wrap">
+    <div class="antron-section-grid">
+      <div>
+        <p class="antron-eyebrow">What We Build</p>
+        <h2>Technology that stays dependable outside the lab.</h2>
+      </div>
+      <div class="antron-card-grid">
+        <article>
+          <h3>Engineering</h3>
+          <p>Focused technical development for defense and security applications.</p>
+        </article>
+        <article>
+          <h3>Integration</h3>
+          <p>Hardware, software, and sensor systems built around field realities.</p>
+        </article>
+        <article>
+          <h3>Reliability</h3>
+          <p>Practical design choices for long service life and operational confidence.</p>
+        </article>
       </div>
     </div>
   </section>
-
-  <section class="intro-band">
-    <div>
-      <p class="eyebrow">What We Build</p>
-      <h2>Technology that stays dependable outside the lab.</h2>
-    </div>
-    <p>Antron Tech focuses on defense and security applications where disciplined engineering, controlled integration, and long service life matter.</p>
-  </section>
-
-  <section class="summary-grid" aria-label="Company focus areas">
-    <article>
-      <span class="card-index">01</span>
-      <h2>Engineering</h2>
-      <p>Focused technical development for defense and security applications.</p>
-    </article>
-    <article>
-      <span class="card-index">02</span>
-      <h2>Integration</h2>
-      <p>Hardware, software, and sensor systems built around field realities.</p>
-    </article>
-    <article>
-      <span class="card-index">03</span>
-      <h2>Reliability</h2>
-      <p>Practical design choices for long service life and operational confidence.</p>
-    </article>
-  </section>
+</main>
 {{ end }}

@@ -1,10 +1,20 @@
 baseURL = 'https://antrontech.com/'
 locale = 'en-us'
 title = 'Antron Tech'
+theme = 'tailbliss'
+DefaultContentLanguage = 'en'
+enableRobotsTXT = true
+enableEmoji = true
+enableInlineShortcodes = true
 disableKinds = ['taxonomy', 'term']
+ignoreFiles = ['content/posts/.*', 'content/prose.md']
 
 [params]
-  description = 'Antron Tech is a defense industry company focused on reliable technology for demanding operational environments.'
+  author = 'Antron Tech'
+  description = 'Antron Tech develops reliable technology for defense and security applications in demanding operational environments.'
+  moto = 'Reliable systems for demanding operational environments.'
+  disable_theme_toggle = false
+  disable_stay_uptodate = true
 
 [menus]
   [[menus.main]]
@@ -19,3 +29,25 @@ disableKinds = ['taxonomy', 'term']
     name = 'Contact'
     pageRef = '/contact'
     weight = 30
+
+  [[menus.footer]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 10
+  [[menus.footer]]
+    name = 'Capabilities'
+    pageRef = '/capabilities'
+    weight = 20
+  [[menus.footer]]
+    name = 'Contact'
+    pageRef = '/contact'
+    weight = 30
+
+[taxonomies]
+  category = 'Categories'
+  tag = 'Tags'
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = '0.148.2'

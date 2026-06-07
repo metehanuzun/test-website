@@ -1,0 +1,248 @@
+:root {
+  --antron-bg: #111827;
+  --antron-bg-deep: #030712;
+  --antron-panel: #0f172a;
+  --antron-panel-soft: #172033;
+  --antron-text: #f9fafb;
+  --antron-muted: #cbd5e1;
+  --antron-line: rgba(148, 163, 184, 0.22);
+  --antron-accent: #6366f1;
+  --antron-accent-strong: #4f46e5;
+}
+
+.antron-wrap {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.antron-hero {
+  background:
+    linear-gradient(105deg, rgba(3, 7, 18, 0.98), rgba(17, 24, 39, 0.92) 58%, rgba(79, 70, 229, 0.56)),
+    radial-gradient(circle at 78% 18%, rgba(99, 102, 241, 0.28), transparent 34%);
+  color: var(--antron-text);
+}
+
+.antron-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 56px;
+  align-items: center;
+  min-height: calc(100vh - 148px);
+  padding: 86px 0;
+}
+
+.antron-eyebrow {
+  margin: 0 0 16px;
+  color: #a5b4fc;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.antron-hero h1,
+.antron-page-hero h1 {
+  max-width: 900px;
+  margin: 0;
+  color: var(--antron-text);
+  font-size: clamp(46px, 6vw, 86px);
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.antron-lead {
+  max-width: 700px;
+  margin-top: 28px;
+  color: var(--antron-muted);
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.antron-lead p {
+  margin: 0 0 12px;
+}
+
+.antron-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.antron-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.antron-button-primary {
+  background: var(--antron-accent-strong);
+  color: white;
+}
+
+.antron-button-secondary {
+  border: 1px solid var(--antron-line);
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+}
+
+.antron-focus-panel {
+  display: grid;
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--antron-line);
+  border-radius: 14px;
+  background: var(--antron-line);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+}
+
+.antron-focus-panel div {
+  padding: 28px;
+  background: rgba(15, 23, 42, 0.88);
+}
+
+.antron-focus-panel span {
+  display: block;
+  margin-bottom: 12px;
+  color: #a5b4fc;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.antron-focus-panel h2 {
+  margin: 0;
+  color: white;
+  font-size: 22px;
+  font-weight: 850;
+}
+
+.antron-focus-panel p {
+  margin: 10px 0 0;
+  color: var(--antron-muted);
+  line-height: 1.6;
+}
+
+.antron-section {
+  padding: 80px 0;
+}
+
+.antron-section-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.3fr);
+  gap: 48px;
+}
+
+.antron-section h2 {
+  max-width: 520px;
+  margin: 0;
+  color: #111827;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.dark .antron-section h2 {
+  color: white;
+}
+
+.antron-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.antron-card-grid article {
+  min-height: 210px;
+  padding: 26px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+.dark .antron-card-grid article {
+  border-color: rgba(148, 163, 184, 0.18);
+  background: #111827;
+}
+
+.antron-card-grid h3 {
+  margin: 0;
+  color: #111827;
+  font-size: 22px;
+  font-weight: 850;
+}
+
+.dark .antron-card-grid h3 {
+  color: white;
+}
+
+.antron-card-grid p {
+  margin: 14px 0 0;
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.dark .antron-card-grid p {
+  color: #cbd5e1;
+}
+
+.antron-page-hero {
+  padding: 76px 0;
+  background: linear-gradient(120deg, var(--antron-bg-deep), var(--antron-bg), var(--antron-accent-strong));
+}
+
+.antron-page-body {
+  padding: 56px 0 80px;
+}
+
+.antron-page-content {
+  max-width: 820px;
+  padding: 34px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+.dark .antron-page-content {
+  border-color: rgba(148, 163, 184, 0.18);
+  background: #111827;
+}
+
+@media (max-width: 920px) {
+  .antron-hero-grid,
+  .antron-section-grid,
+  .antron-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .antron-hero-grid {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .antron-wrap {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .antron-hero-grid,
+  .antron-section,
+  .antron-page-hero {
+    padding: 56px 0;
+  }
+
+  .antron-lead {
+    font-size: 18px;
+  }
+
+  .antron-button {
+    width: 100%;
+  }
+}
